@@ -216,6 +216,7 @@ public class UserController {
      * @return ok
      */
     @RequestMapping(value = "/listKey", method = RequestMethod.POST, consumes = "application/json")
+    @Authorization(onlyGetCustomer = true)
     public ResponseModel listKey() {
         try {
             return ResponseModel.ok(userService.listKey());
