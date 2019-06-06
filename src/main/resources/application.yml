@@ -20,13 +20,5 @@ pageHelper:
   pagehelper.reasonable=false
   pagehelper.params=pageNum=pageHelperStart;pageSize=pageHelperRows;
   pagehelper.supportMethodsArguments=false
-wechat:
-  cp:
-    corpId: wxa2c24859b03f2a4f
-    appConfigs:
-    - agentId: 1000002
-      secret: y2zZajogA9wEfrz22dB8Zg_TpstPCjXD07ocrikKBFg
-      token: xyetGA9r
-      aesKey: MHUe8dr3wKldXDGPmYQjo1CaAGHNhDbpg5GKW4OHXQd
 #logging:
 #  config: classpath:logback-spring.xml
