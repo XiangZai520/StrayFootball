@@ -90,7 +90,6 @@ public class TeamController {
      * @return ok
      */
     @RequestMapping(value = "/delete", method = RequestMethod.POST, consumes = "application/json")
-    @Authorization(onlyGetCustomer = true)
     public ResponseModel delete(@RequestBody TeamRequest model) {
         try {
             teamService.delete(BaseContextHandler.getCustomerId(), model);
@@ -108,6 +107,7 @@ public class TeamController {
      * @return ok
      */
     @RequestMapping(value = "/detailed", method = RequestMethod.POST, consumes = "application/json")
+    @Authorization(onlyGetCustomer = true)
     public ResponseModel detailed(@RequestBody TeamRequest model) {
         try {
             return ResponseModel.ok( teamService.detailed(model));
